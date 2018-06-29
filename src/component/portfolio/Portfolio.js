@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { inject, observer } from 'mobx-react';
 import { FadeDiv, FadeInputOverDelayDiv } from '../animation/animation.style';
-import { BuildIcon, PortContainer, PortData, PortDes, PortName, PortTools } from './port.style';
+import { BuildIcon, DescriptionIcon, PortContainer, PortData, PortDes, PortName, PortTools } from './port.style';
 
 
 
@@ -24,7 +24,7 @@ class Portfolio extends Component {
 								return (
 									<PortData key={`${portfolio[port].id}-${portfolio[port].title}`}>
 										<PortName>{portfolio[port].title}</PortName>
-										<PortDes>{`Description: ${portfolio[port].des}`}</PortDes>
+										<PortDes><DescriptionIcon/>{`Description: ${portfolio[port].des}`}</PortDes>
 										<PortTools><BuildIcon/>{`Tools: ${portfolio[port].tools}`}</PortTools>
 									</PortData>
 								)

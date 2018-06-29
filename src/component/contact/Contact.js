@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { inject, observer } from 'mobx-react';
 import { FadeDiv, FadeInputOverDelayDiv } from '../animation/animation.style';
 import {
-	ContactContainer, ContactEmail, ContactGithub, ContactPhone, PhoneIphoneIcon,
+	ContactContainer, ContactEmail, ContactGithub, ContactPhone, PhoneIphoneIcon, TextLinkGithub,
 } from './contact.style';
 
 
@@ -25,10 +25,9 @@ class Contact extends Component {
 			<FadeDiv checkIndex={menu_store.getIndexStore}>
 				<FadeInputOverDelayDiv>
 					<ContactContainer>
-						<ContactEmail>{contact.email}</ContactEmail>
-						<ContactGithub
-							onClick={this.handleClick.bind(this, contact.github)}>{contact.github}</ContactGithub>
-						<ContactPhone><PhoneIphoneIcon/>{contact.mobile}</ContactPhone>
+						<ContactEmail>Email : {contact.email}</ContactEmail>
+						<ContactGithub>Github : <TextLinkGithub onClick={this.handleClick.bind(this, contact.github)}>Go to My GitHub</TextLinkGithub></ContactGithub>
+						<ContactPhone>Phone : <PhoneIphoneIcon/>{contact.mobile}</ContactPhone>
 					</ContactContainer>
 				</FadeInputOverDelayDiv>
 			</FadeDiv>

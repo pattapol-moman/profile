@@ -4,8 +4,9 @@ class MenuStore {
 	@observable menu = [
 		{ title: 'About' , index: 0},
 		{ title: 'Experience' , index: 1},
-		{ title: 'Portfolio' , index: 2},
-		{ title: 'Contact' , index: 3},
+		{ title: 'Skills' , index: 2},
+		{ title: 'Portfolio' , index: 3},
+		{ title: 'Contact' , index: 4},
 	]
 
 	@observable activeIndex = JSON.parse(window.localStorage.getItem("activeTabIndex") || 0)

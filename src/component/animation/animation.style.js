@@ -18,3 +18,8 @@ export const FadeInputOverDelayDiv = styled.div`
   animation: 3s ${fadeIneAnimation};
   margin-bottom: 20px;
 `;
+
+export const FadeInputOver2DelayDiv = styled.div`
+  animation: 5s ${fadeIneAnimation};
+  margin-bottom: 20px;
+`;

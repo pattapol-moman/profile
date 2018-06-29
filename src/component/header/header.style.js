@@ -33,7 +33,7 @@ export const MenuText = styled.div`
 		right: 0; 
 		bottom: 0; 
 		left: 0;
-		background: #fff;
+		background: #1a1a1a;
 		opacity: 0;
 		transition: 0.2s transform, 0.2s opacity;
 		transform: scaleX(0.5);

@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { Build } from '@material-ui/icons'
+import { Description } from '@material-ui/icons'
 
 export const PortContainer = styled.div`
 	text-align: center;
@@ -20,7 +21,8 @@ export const PortName = styled.div`
 	font-weight: bold;
 	margin-bottom: 2%;
 	@media (max-width: 480px) {
-		font-size: 25px;
+		font-size: 20px;
+		
 	}
 `
 
@@ -29,7 +31,8 @@ export const PortDes = styled.div`
 	font-weight: bold;
 		margin-bottom: 2%;
 	@media (max-width: 480px) {
-		font-size: 25px;
+		font-size: 20px;
+		font-weight: 500;
 	}
 `
 
@@ -43,4 +46,8 @@ export const PortTools = styled.div`
 export const BuildIcon = styled(Build)`
 	font-size: 20px !important;
 	color: crimson;
+`
+export const DescriptionIcon = styled(Description)`
+	font-size: 20px !important;
+	color: rgba(55,111,255,0.75);
 `

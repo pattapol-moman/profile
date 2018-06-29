@@ -7,6 +7,7 @@ import Header from '../component/header/Header';
 import Exp from '../component/exp/Exp';
 import Portfolio from '../component/portfolio/Portfolio';
 import Contact from '../component/contact/Contact';
+import Skill from '../component/skill/Skill';
 
 
 @inject('profile_store', 'menu_store')
@@ -26,8 +27,10 @@ class Profile extends Component {
 			case 1:
 				return <Exp/>
 			case 2:
-				return <Portfolio/>
+				return <Skill/>
 			case 3:
+				return <Portfolio/>
+			case 4:
 				return <Contact/>
 			default:
 				return <Profile/>

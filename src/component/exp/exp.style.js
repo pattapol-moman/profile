@@ -10,6 +10,6 @@ export const ExpData = styled.div`
 	margin-top: 30px;
 	margin-bottom: 5%;
 	@media (max-width: 480px) {
-		font-size: 26px;
+		font-size: 20px;
 	}
 `

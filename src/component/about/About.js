@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { inject, observer } from 'mobx-react';
-import { FadeDiv, FadeInputDiv, FadeInputOverDelayDiv } from '../animation/animation.style';
+import { FadeDiv, FadeInputDiv, FadeInputOver2DelayDiv } from '../animation/animation.style';
 import { AboutContainer, Age, Degree, Gpa, Name, NickName, Uni, Words } from './about.style';
 
 
@@ -18,17 +18,17 @@ class About extends Component {
 		return (
 			<FadeDiv checkIndex={menu_store.getIndexStore}>
 				<AboutContainer>
-					<FadeInputOverDelayDiv>
+					<FadeInputOver2DelayDiv>
 						<Words>{about.words}</Words>
-					</FadeInputOverDelayDiv>
+					</FadeInputOver2DelayDiv>
 					<img src={about.image_url} alt="pattapol" width="200px" height="200px"/>
 					<FadeInputDiv>
 						<Name>{about.name}</Name>
 
-						<NickName>{about.nickName}</NickName>
+						<NickName>Nickname {about.nickName}</NickName>
 						<Age>{about.age}</Age>
 						<Degree>{about.degree}</Degree>
-						<Gpa>{about.gpa}</Gpa>
+						<Gpa>GPA {about.gpa}</Gpa>
 						<Uni>{about.uni}</Uni>
 					</FadeInputDiv>
 				</AboutContainer>
